@@ -26,6 +26,7 @@ img{
   overflow: hidden;
 }
 .creatorField {
+  max-height: 100px;
   text-align: center;
   padding: 2px;
   margin: 2px;
