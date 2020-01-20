@@ -1,0 +1,39 @@
+#details-container {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+}
+.detail-bar0 {
+  max-width: 550px;
+  font-family: "Arial Black";
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: lightskyblue;;
+  padding-left: 10%;
+  margin: 2px;
+  border: solid;
+  border-radius: 10px;
+}
+.detail-bar1 {
+  max-width: 550px;
+  font-family: "Arial Black";
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: lightblue;
+  padding-left: 10%;
+  margin: 2px;
+  border: solid;
+  border-radius: 10px;
+}
+.courseButton {
+  font-family: "Arial Black";
+  font-size: 20px;
+  background-color: bisque;
+  border: solid dodgerblue 1px;
+  border-radius: 5px;
+  margin: 10px;
+}
+img {
+  max-width: 100px;
+  max-height: 100px;
+}

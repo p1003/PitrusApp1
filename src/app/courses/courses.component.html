@@ -1,0 +1,21 @@
+<div class="body">
+  <h1>Course List</h1>
+  <app-search-bar (eventFilter)="filterCourses($event)"></app-search-bar>
+
+  <div *ngFor="let course of courses; let i = index, even as isEven" [ngClass]="{'oddTest':isEven, 'evenTest': !isEven}">
+    <app-course-bar
+      *ngIf="
+        !filtered || (
+        course.name.toLowerCase().includes((filter.name!=null?filter.name:'').toLowerCase()) &&
+        course.form.toLowerCase().includes((filter.form!=null?filter.form:'').toLowerCase()) &&
+        course.description.toLowerCase().includes((filter.description!=null?filter.description:'').toLowerCase()) &&
+        (!filter.semesterMin || course.semester >= filter.semesterMin) && ((!filter.semesterMax && filter.semesterMax != 0) || course.semester <= filter.semesterMax) &&
+        (!filter.starsMin || course.stars >= filter.starsMin) && ((!filter.starsMax && filter.starsMax != 0) || course.stars <= filter.starsMax) &&
+        (!filter.etcsMin || course.etcs >= filter.etcsMin) && ((!filter.etcsMax && filter.etcsMax != 0) || course.etcs <= filter.etcsMax) &&
+        (!filter.placesMin || course.places >= filter.placesMin) && ((!filter.placesMax && filter.placesMax != 0) || course.places <= filter.placesMax)
+        )
+      "
+      [course]="course"
+    ></app-course-bar>
+  </div>
+</div>

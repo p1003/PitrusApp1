@@ -1,0 +1,33 @@
+<div id="details-container" *ngIf="course">
+  <app-score-bar *ngIf="isEnrolled" [stars]="rating" (ratingEvent)="setRating($event)"></app-score-bar>
+  <img src="{{course.image}}"/>
+  <div class="detail-bar0">
+    <h3>Name: </h3>
+    <h3>{{course.name}}</h3>
+  </div>
+  <div class="detail-bar1">
+    <h3>Rating: </h3>
+    <h3>{{this.countRating()}}</h3>
+  </div>
+  <div class="detail-bar0">
+    <h3>Semester: </h3>
+    <h3>{{course.semester}}</h3>
+  </div>
+  <div class="detail-bar1">
+    <h3>Form: </h3>
+    <h3>{{course.form}}</h3>
+  </div>
+  <div class="detail-bar0">
+    <h3>ECTS: </h3>
+    <h3>{{course.ECTS}}</h3>
+  </div>
+  <div class="detail-bar1">
+    <h3>Students: </h3>
+    <h3>{{course.studentsEnrolled}}/{{course.studentsLimit}}</h3>
+  </div>
+  <div class="detail-bar0">
+    <h3>Description: </h3>
+    <p>{{course.description}}</p>
+  </div>
+  <button class="courseButton" *ngIf="canEnroll" (click)="enroll()">Enroll</button>
+</div>

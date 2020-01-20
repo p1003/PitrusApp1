@@ -1,0 +1,15 @@
+<div id="wrapper">
+  <div class="splitter">
+    <div class="img-wrapper">
+      <img src="{{course.image}}">
+    </div>
+    <div class="main-data">
+      <div class="title-wrapper">
+        <h1>{{course.name}}</h1>
+      </div>
+    </div>
+  </div>
+  <button class="courseButton" [routerLink]="'/Details/'+ course.id" >View Details</button>
+
+  <button class="courseButton" *ngIf="isAdmin" (click)="deleteCourse()">Remove</button>
+</div>

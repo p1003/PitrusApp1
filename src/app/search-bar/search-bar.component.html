@@ -1,0 +1,36 @@
+<div class="newCourseForm">
+  <input class="filterField" [(ngModel)]="filter.name" placeholder="Name" />
+  <div class="split">
+    <input class="filterField"
+      type="number"
+      placeholder="Min stars"
+      [(ngModel)]=" filter.starsMin "
+    /><input class="filterField" type="number" placeholder="Max stars" [(ngModel)]="filter.starsMax" />
+  </div>
+  <div class="split">
+    <input class="filterField"
+      type="number"
+      placeholder="Min ECTS"
+      [(ngModel)]="filter.etcsMin"
+    /><input class="filterField" type="number" placeholder="Max ECTS" [(ngModel)]=" filter.etcsMax " />
+  </div>
+  <div class="split">
+    <input class="filterField"
+      type="number"
+      placeholder="Min students limit"
+      [(ngModel)]=" filter.placesMin "
+    /><input class="filterField" type="number" placeholder="Max students limit" [(ngModel)]=" filter.placesMax " />
+  </div>
+  <div class="split">
+    <input class="filterField"
+           type="number"
+           placeholder="Min semester"
+           [(ngModel)]=" filter.semesterMin "
+    /><input class="filterField" type="number" placeholder="Max semester" [(ngModel)]=" filter.semesterMax " />
+  </div>
+  <input class="filterField" type="text" placeholder="Form" [(ngModel)]=" filter.form " />
+  <input class="filterField" type="text" placeholder="Description" [(ngModel)]=" filter.description " />
+  <input class="filterButton" type="button" value="Filter" (click)="sendFilter()"/>
+  <input class="filterButton" type="button" value="Clear the filter" (click)="clearFilter()"/>
+</div>
+
