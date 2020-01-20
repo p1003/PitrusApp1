@@ -6,8 +6,8 @@ export class Filter {
   etcsMax: number = null;
   placesMin: number = null;
   placesMax: number = null;
-  semesterMin: number = null;
-  semesterMax: number = null;
+  semesterMin: string = null;
+  semesterMax: string = null;
   form: string = null;
   description: string = null;
 
