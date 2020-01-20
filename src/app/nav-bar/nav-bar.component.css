@@ -1,0 +1,27 @@
+#body {
+  max-width: 800px;
+  display: block;
+  background-color: deepskyblue;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin: auto;
+  border: solid dodgerblue 1px;
+  border-radius: 5px;
+}
+nav {
+  display: block;
+  grid-template-columns: auto auto auto auto;
+}
+.navButton {
+  font-family: "Arial Black";
+  font-size: 20px;
+  background-color: bisque;
+  border: solid dodgerblue 1px;
+  border-radius: 5px;
+  margin: 5px;
+}
+h1 {
+  font-family: "Arial Black";
+  font-size: 20px;
+}

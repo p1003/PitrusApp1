@@ -1,0 +1,10 @@
+<div id="body">
+  <naV>
+    <button class="navButton" routerLink="/Courses">Courses</button>
+    <button *ngIf="!isAuthenticated" class="navButton" routerLink="/Registration">Registration</button>
+    <button *ngIf="!isAuthenticated" class="navButton" routerLink="/Logging">Logging</button>
+    <button *ngIf="isAuthenticated" class="navButton" (click)="logout()">Logout</button>
+    <button *ngIf="isAuthenticated && isAdmin" class="navButton" routerLink="/CoursesAdmin">Courses Admin</button>
+    <h1>{{this.email}}</h1>
+  </naV>
+</div>

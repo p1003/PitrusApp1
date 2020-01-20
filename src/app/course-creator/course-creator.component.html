@@ -1,0 +1,15 @@
+<div class="newCourseFormBackground" (click)="hide()">
+  <div class="newCourseForm" (click)="stopPropagation($event)">
+    <input class="creatorField" [(ngModel)]="course.name" placeholder="name" />
+    <input class="creatorField" [(ngModel)]="course.ECTS" placeholder="ECTS" />
+    <input class="creatorField" [(ngModel)]="course.studentsLimit" placeholder="Students limit" />
+    <input class="creatorField" [(ngModel)]="course.semester" placeholder="semester" />
+    <input class="creatorField" [(ngModel)]="course.form" placeholder="form" />
+    <input class="creatorField" [(ngModel)]="course.image" placeholder="icon path" />
+    <div class="img-wrapper">
+      <img src="{{ course.image }}"/>
+    </div>
+    <input class="creatorField" [(ngModel)]="course.description" placeholder="description" />
+    <input class="creatorButton" value="dodaj" (click)="submitCourse()"/>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.newCourseFormBackground {
+  position: fixed;
+  z-index: 666;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(141, 141, 141, 0.8);
+}
+.newCourseForm {
+  max-width: 400px;
+  min-width: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+img{
+  max-height: 100%;
+  width: auto;
+}
+.img-wrapper{
+  height: 100%;
+  width: fit-content;
+  max-width: 6cm;
+  overflow: hidden;
+}
+.creatorField {
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid dodgerblue;
+  border-radius: 10px;
+}
+.creatorButton {
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  font-family: "Arial Black";
+  background-color: bisque;
+  border: 1px solid dodgerblue;
+  border-radius: 15px;
+}

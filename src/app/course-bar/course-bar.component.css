@@ -1,0 +1,54 @@
+#wrapper{
+  background-color: rgba(1,1,1,0);
+  width: 80%;
+  max-width: 20cm;
+  height: fit-content;
+  padding: 3px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Arial Black";
+}
+img{
+  max-height: 100%;
+  width: auto;
+}
+.img-wrapper{
+  height: 100%;
+  width: fit-content;
+  max-width: 6cm;
+  overflow: hidden;
+}
+h1{
+  font-size: 1cm;
+  margin: 1mm 1mm 1mm 2.5mm;
+}
+.splitter{
+  display: grid;
+  grid-template-columns: auto 7cm;
+  height: fit-content;
+}
+.main-data{
+  display: grid;
+  grid-template-rows: auto auto;
+  height: auto;
+}
+
+.title-wrapper{
+  height: fit-content;
+}
+.more-button{
+  height: 0.5cm;
+  width: 0.9cm;
+  background-color: rgba(211, 211, 211, 0.5);
+  padding: 0.3mm;
+}
+.courseButton {
+  font-family: "Arial Black";
+  background-color: bisque;
+  border: solid dodgerblue 1px;
+  border-radius: 5px;
+}
+img {
+  max-width: 100px;
+  max-height: 100px;
+}

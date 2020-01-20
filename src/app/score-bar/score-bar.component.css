@@ -1,0 +1,4 @@
+.scoreBar {
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px 40px;
+}

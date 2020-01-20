@@ -1,0 +1,28 @@
+.newCourseForm {
+  font-family: "Arial Black";
+  max-width: 350px;
+  min-width: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 20px;
+}
+.split {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.filterField {
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid dodgerblue;
+  border-radius: 10px;
+}
+.filterButton {
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  font-family: "Arial Black";
+  background-color: bisque;
+  border: 1px solid dodgerblue;
+  border-radius: 15px;
+}

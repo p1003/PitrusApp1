@@ -1,0 +1,29 @@
+<div class="scoreBar">
+  <ng-container *ngFor="let star of rating; let i = index">
+    <div
+      (click)="setRating(i + 1)"
+      class="starWrapper"
+    >
+      <ng-container [ngSwitch]="star">
+        <img
+          *ngSwitchCase="2"
+          src="/assets/Images/FullStar.png"
+          alt="ratedStar.png"
+          class="star"
+        />
+        <img
+          *ngSwitchCase="1"
+          src="/assets/Images/FullStar.png"
+          alt="fullStar.png"
+          class="star"
+        />
+        <img
+          *ngSwitchDefault
+          src="/assets/Images/NoStar.png"
+          alt="noStar.png"
+          class="star"
+        />
+      </ng-container>
+    </div>
+  </ng-container>
+</div>
